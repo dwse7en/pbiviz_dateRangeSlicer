@@ -190,7 +190,7 @@ export class Visual implements IVisual {
             if (hasRestoredFromFilter) {
                 // 恢复成功后清理标记并返回，避免自动应用度量覆盖恢复的筛选
                 this.isUserCleared = false;
-                this.suppressDefaultRangeApply = false;
+                this.suppressDefaultRangeApply = true;
                 return;
             }
         }
